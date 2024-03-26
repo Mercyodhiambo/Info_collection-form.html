@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Subscription Form</title>
+</head>
+<body>
+
+<h2>Club Subscription Form</h2>
+
+<form action="submit_subscription.php" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br>
+    
+    <label for="motivation">Motivation for joining the club:</label><br>
+    <textarea id="motivation" name="motivation" rows="4" cols="50" required></textarea><br>
+    
+    <label for="level">Level:</label><br>
+    <select id="level" name="level" required>
+        <option value="diploma">Diploma</option>
+        <option value="undergraduate">Undergraduate</option>
+        <option value="postgraduate">Postgraduate</option>
+    </select><br>
+    
+    <label for="payment">Payment method:</label><br>
+    <input type="radio" id="card" name="payment" value="card" required>
+    <label for="card">Card</label><br>
+    <input type="radio" id="mpesa" name="payment" value="mpesa" required>
+    <label for="mpesa">M-Pesa</label><br>
+    <input type="radio" id="cash" name="payment" value="cash" required>
+    <label for="cash">Cash</label><br>
+    
+    <label for="social">Social media accounts:</label><br>
+    <input type="checkbox" id="instagram" name="social[]" value="instagram">
+    <label for="instagram">Instagram</label><br>
+    <input type="checkbox" id="twitter" name="social[]" value="twitter">
+    <label for="twitter">Twitter</label><br>
+    <input type="checkbox" id="facebook" name="social[]" value="facebook">
+    <label for="facebook">Facebook</label><br>
+    <input type="checkbox" id="pinterest" name="social[]" value="pinterest">
+    <label for="pinterest">Pintrest</label><br>
+    <input type="checkbox" id="tiktok" name="social[]" value="tiktok">
+    <label for="tiktok">TikTok</label><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
